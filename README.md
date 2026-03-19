@@ -8,6 +8,6 @@ The first project that I conducted was a study of alcohol consumption across cou
 
 Link to first project: https://github.com/ashbywhitaker/Whitaker-Data-Science-Portfolio/tree/main/basic_streamlit_app 
 
-The second project that I completed was a tidy data project. I studied medal counts across sports and gender in the Olympics after cleaning data, separating conjoined variables, and finally creating visualizations and pivot tables that indicate these changes. 
+The second project that I completed was a tidy data project. I studied medal counts across sports and gender in the Olympics after cleaning data, separating conjoined variables, and finally creating visualizations and pivot tables that indicate these changes. This complements my overall portfolio by indicating the skills I have developed in data wrangling. Because tidying and cleaning data is so important to data science, an indication of those skills is important for my overall portfolio.
 
 Link to second project: 
