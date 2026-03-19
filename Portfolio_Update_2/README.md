@@ -10,4 +10,4 @@
 
 ### https://vita.had.co.nz/papers/tidy-data.pdf 
 ### Data Cleaning Cheat Sheet: https://www.kdnuggets.com/publications/sheets/Data_Cleaning_with_Python_Cheat_Sheet_Anello.pdf 
-## Data Wrangling Cheat Sheet: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf 
+### Data Wrangling Cheat Sheet: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf 
