@@ -9,16 +9,16 @@ from sklearn.datasets import load_iris, load_wine #loading the two sample datase
 
 # Title and Brief Descriptions of the Different Metrics and buttons that can be used by the model
 st.title("Interactive Machine Learning Explorer")
+
 st.write("Logistic Regression: A classification algorithm that models the probability of a class using the logistic function. It is widely used for binary classification tasks.")
 
 st.write("Decision Tree: A model that splits data based on feature values to make predictions. It creates a flowchart-like structure for decision making.")
 
 st.write("Test Size (%): The percentage of the dataset reserved for testing the model's performance. The remaining data is used for training.")
 
-st.write("C (Inverse Regularization Strength): A parameter controlling regularization; smaller values specify stronger regularization to prevent overfitting. Inverse of regularization strength, so higher C means less regularization.")
-
 st.write("Max Iterations: The maximum number of iterations the algorithm runs during training to optimize the model parameters.")
 
+st.write("Min Samples Split is the minimum number of samples a node must have to be split into two child nodes during training.")
 # Dataset selection
 #Creates a section to choose between datasets
 dataset_option = st.sidebar.selectbox("Choose Dataset", ["Upload your own", "Iris", "Wine"])
@@ -56,7 +56,6 @@ if df is not None:
 
     # Hyperparameters
     if model_type == "Logistic Regression":
-        C = st.sidebar.slider("C (Inverse of regularization strength)", 0.01, 10.0, 1.0)
         max_iter = st.sidebar.slider("Max Iterations", 100, 1000, 200)
     elif model_type == "Decision Tree":
         max_depth = st.sidebar.slider("Max Depth", 1, 20, 5)
@@ -76,7 +75,7 @@ if df is not None:
     
     # The two options in my selection box 
     if model_type == "Logistic Regression":
-        model = LogisticRegression(C=C, max_iter=max_iter, solver='lbfgs')
+        model = LogisticRegression(max_iter=max_iter, solver='lbfgs')
     elif model_type == "Decision Tree":
         model = DecisionTreeClassifier(max_depth=max_depth, min_samples_split=min_samples_split)
     
