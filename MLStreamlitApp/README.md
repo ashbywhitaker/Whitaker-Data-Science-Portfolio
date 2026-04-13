@@ -6,13 +6,9 @@ This project provides an interactive web app built with Streamlit that allows us
 ## Instructions
 
 ### Running Locally
-1. **Clone the repository** (or copy the code into a Python file):
-   ```bash
-   git clone <repository_url>
-   cd <repository_directory>
-2. **Download Necessary Packages**
+1. **Download Necessary Packages**
     pip install streamlit pandas scikit-learn matplotlib
-3. **Accessing the App**
+2. **Accessing the App**
     Using the Deployed Version: http://10.24.219.83:8501
 # App Features
 
