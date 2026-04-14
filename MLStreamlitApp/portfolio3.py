@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import sklearn
 from sklearn.model_selection import train_test_split #To prepare the data for manipulation
 from sklearn.linear_model import LogisticRegression #For the logistic regression part of my model
 from sklearn.tree import DecisionTreeClassifier #To use a decision tree
