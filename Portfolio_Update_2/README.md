@@ -1,13 +1,39 @@
-## In this project, I will explore the Olympic Medalists of different sports across gender. I load the "olympics_08_medalists.csv" dataset. Because the data is not tidy, I begin by tidying the data and fixing some of the conjoined variables. After the data is cleaned, I begin with visualizations to explore types of medals and medals by gender. Finally, I aggregate a pivot table by gender and medal counts. This gives a clear indication of medals by sport and gender - perhaps the most enlightening part of my project. 
+# Olympic Medalists Data Exploration
 
-## After establishing the purpose of my project, one must understand why tidy data is important. While it will be clear in the project the before and after of the data frame is significantly easier to follow, the principles of tidy data require this change. In order to properly understand data, eliminate possibilities for mistakes, and remove unnecessary complexities, each variable must have its own column, each observation must have its own row, and different entities should have their own tables. As an example of tidy data, in my project I had to split gender and sport because each variable needed its own column. 
+## Project Overview
+This project explores Olympic medalists from the 2008 Olympics, with a focus on differences across gender and sport. Using the dataset "olympics_08_medalists.csv", the goal of the project is to clean and restructure the data before creating visualizations that highlight trends in medal distribution. A major component of this project is demonstrating the importance of tidy data. The dataset initially contains combined variables, which makes analysis more difficult. After cleaning and restructuring the data, I create visualizations and summary tables that provide clearer insights into medal counts by gender and sport.
 
-## In order to run this project, one must import pandas, matplotlib, and seaborn. I have commented the code in order to allow for the project to be easily followed or replicated.
+## Instructions
 
-## The dataset that I use is the "olympics_08_medalists.csv" data. The purpose of the dataset is to include medal winners by place of birth and not country. The goal of the dataset is to show what countries are actually strongest in team sports, not necessarily by their olympic teams but by their medalist winners. I use the dataset out of more interest in gender, sport, and medal count. I am including a link to the source: https://edjnet.github.io/OlympicsGoNUTS/2008/ 
+### Running Locally
+1. **Download Necessary Packages**
+    pip install pandas matplotlib seaborn
+2. **Run the Script**
+    Open the Python file in VS Code or another preferred environment
 
-## Finally, in order to faciliate further study and understanding of this project and the importance of tidy data, I am providing links to a cheat sheet and a paper by Hadley Wickham, entitled "Tidy Data." The paper was published in the Journal of Statistical Software. 
+## Project Features
+### Dataset
+- Uses the dataset: olympics_08_medalists.csv
+- Dataset source: https://edjnet.github.io/OlympicsGoNUTS/2008/
 
-### https://vita.had.co.nz/papers/tidy-data.pdf 
-### Data Cleaning Cheat Sheet: https://www.kdnuggets.com/publications/sheets/Data_Cleaning_with_Python_Cheat_Sheet_Anello.pdf 
-### Data Wrangling Cheat Sheet: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf 
+### Data Cleaning (Tidy Data)
+- The dataset initially contains non-tidy data with combined variables
+- Data is restructured to follow tidy data principles: 
+    - Each variable has its own column
+    - Each observation has its own row
+    - Each type of entity is stored separately
+
+### Visualizations
+- Graphs are created to explore:
+    - Distribution of medal types
+    - Medal counts by gender
+    - Visualizations help highlight trends and differences across groups
+
+## Additional Resources
+### Tidy Data Paper (Hadley Wickham):
+- https://vita.had.co.nz/papers/tidy-data.pdf
+### Data Cleaning Cheat Sheet:
+- https://www.kdnuggets.com/publications/sheets/Data_Cleaning_with_Python_Cheat_Sheet_Anello.pdf
+### Pandas Data Wrangling Cheat Sheet:
+- https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
+
